@@ -204,3 +204,38 @@ variable "app_count" {
 
 ####### Your Additions Will Start Here ######
 
+#### AWS_S3_BUCKET ####
+
+resource "aws_s3_bucket" "udacity_res_bucket" {
+  bucket = "udacity-lalit-aws-s3-bucket"
+
+  tags = {
+    Name        = "udacity_bucket"
+    Environment = "Dev"
+  }
+}
+
+resource "aws_s3_bucket_acl" "udacity_res_bucket_acl" {
+  bucket = aws_s3_bucket.udacity_res_bucket.id
+  acl    = "private"
+}
+
+#### AWS_DYNAMO_INSTANCE ###
+
+resource "aws_dynamodb_table" "basic-dynamodb-table" {
+  name           = "udacity-lalit-aws-dynamodb"
+  billing_mode   = "PROVISIONED"
+  read_capacity  = 20
+  write_capacity = 20
+  hash_key       = "UserId"
+
+  attribute {
+    name = "UserId"
+    type = "S"
+  }
+
+  tags = {
+    Name        = "dynamodb-table-1"
+    Environment = "Dev"
+  }
+}
