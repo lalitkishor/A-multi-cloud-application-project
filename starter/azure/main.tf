@@ -39,7 +39,7 @@ resource "azurerm_storage_account" "udacity" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_sql_server" "udacity" {
+resource "azurerm_mssql_server" "udacity" {
   name                         = "udacity-lalit-azure-sql"
   resource_group_name          = data.azurerm_resource_group.udacity.name
   location                     = data.azurerm_resource_group.udacity.location
@@ -50,11 +50,6 @@ resource "azurerm_sql_server" "udacity" {
   tags = {
     environment = "Dev"
   }
-}
-
-resource "azurerm_resource_group" "udacity" {
-  name     = "udacity-lalit-resources"
-  location = "West Europe"
 }
 
 resource "azurerm_service_plan" "udacity" {
