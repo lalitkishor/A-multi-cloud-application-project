@@ -1,4 +1,5 @@
 . Briefly explain why AWS DynamoDB is chosen
+
 For NOSQL database AWS provides the DYNAMO DB and Azure provides the Cosmos DB, both services are
 available worldwide, higly reliable and sclable. Pricing depend on many factors.
 Azure backup cost is $0.12 per GB-Month but AWS DynamoDB Table Backup cost is $0.15 per GB.
