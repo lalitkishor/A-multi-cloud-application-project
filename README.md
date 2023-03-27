@@ -1,6 +1,8 @@
 ## GITHUB_LINK
 ### https://github.com/lalitkishor/A-multi-cloud-application-project
 
+Solution is present in Solution.md file
+
 # A Multi-Cloud Application
 
 ## Getting Started
