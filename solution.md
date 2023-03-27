@@ -1,4 +1,4 @@
-. Briefly explain why AWS DynamoDB is chosen
+1. Briefly explain why AWS DynamoDB is chosen
 
 For NOSQL database AWS provides the DYNAMO DB and Azure provides the Cosmos DB, both services are
 available worldwide, higly reliable and sclable. Pricing depend on many factors.
@@ -11,12 +11,12 @@ Reads(On-Demand)
 DynamoDB	Read Request Unit	$0.25/1 million read request units
 Azure Cosmos DB – Serverless	Request Units(RU)	$0.25/1 million RUs
 
-. Diagram that shows cloud-provider service selections for the proposed multi-cloud application.
+2. Diagram that shows cloud-provider service selections for the proposed multi-cloud application.
 ![img](https://github.com/lalitkishor/A-multi-cloud-application-project/blob/master/multi-cloud-architecture.png)
 
-. I added the appropriate modules thorugh provided link in README file. I edit all the **env variables** and **dns_name_label** .
+3. I added the appropriate modules thorugh provided link in README file. I edit all the **env variables** and **dns_name_label** .
 
-. For AZURE I edit the resource group name (line 2) and apply all the components in ```main.tf``` files. For AWS I added the all required components in ```main.tf``` file.
+4. For AZURE I edit the resource group name (line 2) and apply all the components in ```main.tf``` files. For AWS I added the all required components in ```main.tf``` file.
 
 Terraform Apply changes on AWS
 ![img](https://github.com/lalitkishor/A-multi-cloud-application-project/blob/master/screenshots/aws_added.png)
