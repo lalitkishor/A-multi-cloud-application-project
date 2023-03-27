@@ -52,11 +52,6 @@ resource "azurerm_sql_server" "udacity" {
   }
 }
 
-
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_resource_group" "udacity" {
   name     = "udacity-lalit-resources"
   location = "West Europe"
