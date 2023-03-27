@@ -67,4 +67,7 @@ resource "azurerm_linux_web_app" "udacity" {
   service_plan_id     = azurerm_service_plan.udacity.id
 
   site_config {}
+  tags = {
+    environment = "Dev"
+  }
 }
